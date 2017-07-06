@@ -1,0 +1,49 @@
+#index {
+	height:100%;
+
+	#container {width:100%;height:100%;position:relative;overflow:hidden;}
+	#container ul {height:100%;}
+	#container li {width:100%;height:100%;position:relative;top:0%;left:0%;}
+	
+	#canvas {
+		width:6.4rem;height:10.39rem;
+	}
+	.btn_music {
+		position:absolute;top:0.40rem;right:0.40rem;/* display:none; */
+		width:0.66rem;height:0.66rem;
+		background:url(default/page/index/images/music.png) 0 0 no-repeat;
+		-webkit-background-size:100% auto;
+		background-size:100% auto;
+	}
+	.music_off {
+		background-position:0 100%;
+	}
+	.qrcode {
+		position:absolute;top:6.72rem;left:1.32rem;display:none;
+		width:1.7rem;
+	}
+
+	.arrow {
+		position:absolute;bottom:0.48rem;left:50%;display:none;
+		width:0.48rem;margin-left:-0.24rem;
+		-webkit-animation:anim_arrow 1s ease-in-out infinite;
+		animation:anim_arrow 1s linear infinite;
+	}
+	@-webkit-keyframes anim_arrow {
+		0% {-webkit-transform:translate(0,-6px);opacity:1;}
+		75% {opacity:1;}
+		90% {-webkit-transform:translate(0,6px);opacity:0;}
+		100% {-webkit-transform:translate(0,6px);opacity:0;}
+	}
+	@keyframes anim_arrow {
+		0% {transform:translate(0,-6px);opacity:0;}
+		25% {opacity:1;}
+		75% {opacity:1;}
+		90% {transform:translate(0,6px);opacity:0;}
+		100% {transform:translate(0,6px);opacity:0;}
+	}
+}
+
+body {
+	background-color:#f3f1f2;
+}

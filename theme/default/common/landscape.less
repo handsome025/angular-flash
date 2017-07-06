@@ -1,0 +1,17 @@
+body.landscape {
+    background: #f60;
+
+    * {
+        visibility: hidden !important;
+    }
+
+    &:after {
+        z-index: 1;
+        position: absolute;
+        content: '请使用竖屏浏览';
+        color: #fff;
+        left: 50%;
+        top: 50%;
+        transform: translate3d(-50%, -50%, 0);
+    }
+}

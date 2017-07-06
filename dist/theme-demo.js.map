@@ -1,0 +1,1 @@
+{"version":3,"sources":["uConfig.js"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA","file":"theme-demo.js","sourcesContent":["angular.module('ued')\n    .run(function (uConfig) {\n        angular.extend(uConfig, {\n            name: 'demo'\n        })\n    })"]}
